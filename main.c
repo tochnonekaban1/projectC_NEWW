@@ -17,7 +17,8 @@ typedef struct
 } Job;
 
 // структура для решения (куда назначили и какая нагрузка)
-typedef struct {
+typedef struct 
+{
     int where[MAX_JOBS];      // для каждого задания - на какой машине
     int load[MAX_MACHINES];   // нагрузка на каждую машину
     int makespan;             // максимальная нагрузка (самая загруженная машина)
@@ -28,7 +29,8 @@ Job jobs[MAX_JOBS]; // массив заданий
 int n, m; // n - сколько заданий, m - сколько машин
 
 // функция возвращает большее из двух чисел
-int max(int a, int b) {
+int max(int a, int b) 
+{
     return a > b ? a : b;
 }
 
